@@ -21,7 +21,7 @@ npm install devforest-vue-animation-sprite
 ```vue
 <script setup lang="ts">
 import DevforestVueAnimationSprite from "devforest-vue-animation-sprite";
-import "devforest-vue-analog-clock/dist/style.css";
+import "devforest-vue-animation-sprite/dist/style.css";
 
 import { computed } from "vue";
 import catImage from "../assets/cat.png";

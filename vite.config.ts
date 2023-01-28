@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
-      name: 'DevforestVueAnalogClock',
-      fileName: 'devforest-vue-analog-clock'
+      name: 'DevforestVueAnimationSprite',
+      fileName: 'devforest-vue-animation-sprite'
     },
     rollupOptions: {
       external: ['vue'],

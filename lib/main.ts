@@ -1,2 +1,2 @@
-import AnimationSprite from './AnimationSprite.vue'
-export { AnimationSprite }
+import DevforestVueAnimationSprite from './DevforestVueAnimationSprite.vue'
+export { DevforestVueAnimationSprite }

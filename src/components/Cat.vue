@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { AnimationSprite } from "../../lib/main";
+import DevforestVueAnimationSprite from "../../lib/DevforestVueAnimationSprite.vue";
 import { computed } from "vue";
+// https://elthen.itch.io/2d-pixel-art-cat-sprites
 import catImage from "../assets/cat.png";
 
 const imageUrl = computed(() => {
@@ -9,7 +10,7 @@ const imageUrl = computed(() => {
 </script>
 <template>
   <div>
-    <animation-sprite
+    <DevforestVueAnimationSprite
       :width="32"
       :height="32"
       :image="imageUrl"

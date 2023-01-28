@@ -23,7 +23,7 @@
     "lib/**/*.ts",
     "lib/**/*.d.ts",
     "lib/**/*.tsx",
-    "lib/**/*.vue"
+    "lib/**/*.vue",
   ],
   "references": [
     {

@@ -1,18 +1,42 @@
-# Vue 3 + TypeScript + Vite
+# DevForest Vue Animation Sprite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A simple animation sprite component.
 
-## Recommended IDE Setup
+Main features:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+* Can use spritesheets
+* Can specify specific animation areas from spritesheet
+* Can adjust animation speed
+* Can specify animation repeat count"
 
-## Type Support For `.vue` Imports in TS
+## Install
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+npm:
+```shell
+npm install devforest-vue-animation-sprite
+```
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Use in Vue 3
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+```vue
+<script setup lang="ts">
+import { DevforestVueAnalogClock } from "devforest-vue-analog-clock";
+import "devforest-vue-analog-clock/dist/style.css";
+
+...
+</script>
+<template>
+
+    <div>
+        <DevforestVueAnalogClock 
+        :size="200" 
+        :second-hand-height="90" 
+        :minute-hand-height="70" 
+        :hour-hand-height="50" />
+    </div>
+</template>
+```
+
+## Resources
+
+* cat.png : https://elthen.itch.io/2d-pixel-art-cat-sprites

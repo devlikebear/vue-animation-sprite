@@ -4,7 +4,7 @@ import Cat from './components/Cat.vue'
 
 <template>
   <div>
-    <cat />
+    <Cat />
   </div>
 </template>
 

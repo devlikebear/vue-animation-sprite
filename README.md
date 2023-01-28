@@ -20,20 +20,29 @@ npm install devforest-vue-animation-sprite
 
 ```vue
 <script setup lang="ts">
-import { DevforestVueAnalogClock } from "devforest-vue-analog-clock";
+import DevforestVueAnimationSprite from "devforest-vue-animation-sprite";
 import "devforest-vue-analog-clock/dist/style.css";
 
-...
+import { computed } from "vue";
+import catImage from "../assets/cat.png";
+
+const imageUrl = computed(() => {
+  return catImage;
+});
 </script>
 <template>
-
-    <div>
-        <DevforestVueAnalogClock 
-        :size="200" 
-        :second-hand-height="90" 
-        :minute-hand-height="70" 
-        :hour-hand-height="50" />
-    </div>
+  <div>
+    <DevforestVueAnimationSprite
+      :width="32"
+      :height="32"
+      :image="imageUrl"
+      :duration="1"
+      :numOfAnimationSprite="8"
+      :left="0"
+      :top="32 * -9"
+      iteration-count="infinite"
+    />
+  </div>
 </template>
 ```
 
